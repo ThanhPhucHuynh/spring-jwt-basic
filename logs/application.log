@@ -1,0 +1,77 @@
+2021-11-12 14:00:32.718  INFO 28525 --- [main] com.example.DemoApplication              : Starting DemoApplication using Java 17 on tphuc-pc with PID 28525 (/mnt/sda2/free/java/demo/target/classes started by tphuc in /mnt/sda2/free/java/demo)
+2021-11-12 14:00:32.720  INFO 28525 --- [main] com.example.DemoApplication              : No active profile set, falling back to default profiles: default
+2021-11-12 14:00:33.536  INFO 28525 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 14:00:33.613  INFO 28525 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2021-11-12 14:00:34.052  INFO 28525 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2f66f0d0' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 14:00:34.061  INFO 28525 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 14:00:34.420  INFO 28525 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-11-12 14:00:34.435  INFO 28525 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-12 14:00:34.435  INFO 28525 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-12 14:00:34.540  INFO 28525 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-12 14:00:34.541  INFO 28525 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1761 ms
+2021-11-12 14:00:34.926  INFO 28525 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 14:00:34.977  INFO 28525 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 14:00:35.102  INFO 28525 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 14:00:35.200  INFO 28525 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-12 14:00:38.241  INFO 28525 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-12 14:00:38.263  INFO 28525 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-11-12 14:00:42.220  INFO 28525 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 14:00:42.227  INFO 28525 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 14:00:42.632  WARN 28525 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-12 14:00:43.206  INFO 28525 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@988c126, org.springframework.security.web.context.SecurityContextPersistenceFilter@6be2b567, org.springframework.security.web.header.HeaderWriterFilter@7d8d671b, org.springframework.web.filter.CorsFilter@3fda8dae, org.springframework.security.web.authentication.logout.LogoutFilter@3539cf45, com.example.config.JwtRequestFilter@38445703, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fcbc336, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4229b92c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34e53c02, org.springframework.security.web.session.SessionManagementFilter@5737d116, org.springframework.security.web.access.ExceptionTranslationFilter@1774c4e2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5357de0e]
+2021-11-12 14:00:43.471  INFO 28525 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-11-12 14:00:43.483  INFO 28525 --- [main] com.example.DemoApplication              : Started DemoApplication in 11.207 seconds (JVM running for 11.656)
+2021-11-12 14:00:45.260  INFO 28525 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-12 14:00:45.261  INFO 28525 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-12 14:00:45.262  INFO 28525 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-11-12 14:00:45.284  WARN 28525 --- [http-nio-8081-exec-1] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:45.307  INFO 28525 --- [http-nio-8081-exec-1] com.example.controller.UserController    : test completed
+2021-11-12 14:00:46.631  WARN 28525 --- [http-nio-8081-exec-3] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:46.633  INFO 28525 --- [http-nio-8081-exec-3] com.example.controller.UserController    : test completed
+2021-11-12 14:00:47.351  WARN 28525 --- [http-nio-8081-exec-5] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:47.352  INFO 28525 --- [http-nio-8081-exec-5] com.example.controller.UserController    : test completed
+2021-11-12 14:00:47.933  WARN 28525 --- [http-nio-8081-exec-7] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:47.934  INFO 28525 --- [http-nio-8081-exec-7] com.example.controller.UserController    : test completed
+2021-11-12 14:00:48.524  WARN 28525 --- [http-nio-8081-exec-9] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:48.526  INFO 28525 --- [http-nio-8081-exec-9] com.example.controller.UserController    : test completed
+2021-11-12 14:00:49.026  WARN 28525 --- [http-nio-8081-exec-1] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:49.027  INFO 28525 --- [http-nio-8081-exec-1] com.example.controller.UserController    : test completed
+2021-11-12 14:00:49.533  WARN 28525 --- [http-nio-8081-exec-3] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:49.536  INFO 28525 --- [http-nio-8081-exec-3] com.example.controller.UserController    : test completed
+2021-11-12 14:00:49.979  WARN 28525 --- [http-nio-8081-exec-5] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:49.980  INFO 28525 --- [http-nio-8081-exec-5] com.example.controller.UserController    : test completed
+2021-11-12 14:00:50.490  WARN 28525 --- [http-nio-8081-exec-7] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:50.492  INFO 28525 --- [http-nio-8081-exec-7] com.example.controller.UserController    : test completed
+2021-11-12 14:00:50.938  WARN 28525 --- [http-nio-8081-exec-9] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:50.939  INFO 28525 --- [http-nio-8081-exec-9] com.example.controller.UserController    : test completed
+2021-11-12 14:00:51.827  WARN 28525 --- [http-nio-8081-exec-1] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:51.827  INFO 28525 --- [http-nio-8081-exec-1] com.example.controller.UserController    : test completed
+2021-11-12 14:00:52.292  WARN 28525 --- [http-nio-8081-exec-3] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:52.294  INFO 28525 --- [http-nio-8081-exec-3] com.example.controller.UserController    : test completed
+2021-11-12 14:00:52.721  WARN 28525 --- [http-nio-8081-exec-5] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:52.722  INFO 28525 --- [http-nio-8081-exec-5] com.example.controller.UserController    : test completed
+2021-11-12 14:00:53.214  WARN 28525 --- [http-nio-8081-exec-7] com.example.config.JwtRequestFilter      : JWT Token does not begin with Bearer String
+2021-11-12 14:00:53.216  INFO 28525 --- [http-nio-8081-exec-7] com.example.controller.UserController    : test completed
+2021-11-12 16:26:20.497  INFO 60153 --- [main] com.example.DemoApplicationTests         : Starting DemoApplicationTests using Java 17 on tphuc-pc with PID 60153 (started by tphuc in /mnt/sda2/free/java/demo)
+2021-11-12 16:26:20.501  INFO 60153 --- [main] com.example.DemoApplicationTests         : No active profile set, falling back to default profiles: default
+2021-11-12 16:26:21.099  INFO 60153 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 16:26:21.147  INFO 60153 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2021-11-12 16:26:21.460  INFO 60153 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@724b939e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 16:26:21.473  INFO 60153 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-12 16:26:21.803  INFO 60153 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 16:26:21.842  INFO 60153 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 16:26:21.949  INFO 60153 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 16:26:22.031  INFO 60153 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-12 16:26:24.580  INFO 60153 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-12 16:26:24.608  INFO 60153 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2021-11-12 16:26:25.735  INFO 28525 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 16:26:25.740  INFO 28525 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-12 16:26:25.745  INFO 28525 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-12 16:26:28.734  INFO 60153 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 16:26:28.744  INFO 60153 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 16:26:29.134  WARN 60153 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-12 16:26:29.771  INFO 60153 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3696d12d, org.springframework.security.web.context.SecurityContextPersistenceFilter@4891d727, org.springframework.security.web.header.HeaderWriterFilter@57a0c261, org.springframework.web.filter.CorsFilter@656672fb, org.springframework.security.web.authentication.logout.LogoutFilter@682fe17b, com.example.config.JwtRequestFilter@56a72887, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e149513, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37a0fc8c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75df4b1d, org.springframework.security.web.session.SessionManagementFilter@488279d3, org.springframework.security.web.access.ExceptionTranslationFilter@fb42c1c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@796613b7]
+2021-11-12 16:26:30.166  INFO 60153 --- [main] com.example.DemoApplicationTests         : Started DemoApplicationTests in 9.926 seconds (JVM running for 10.943)
+2021-11-12 16:26:30.389  INFO 60153 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 16:26:30.392  INFO 60153 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-12 16:26:31.461  INFO 60153 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

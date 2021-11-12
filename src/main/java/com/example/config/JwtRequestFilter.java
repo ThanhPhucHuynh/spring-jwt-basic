@@ -32,8 +32,10 @@ public class JwtRequestFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
             throws ServletException, IOException {
 
+    	
+    	
         final String requestTokenHeader = request.getHeader("Authorization");
-
+        System.out.println(request.getHttpServletMapping().toString());
         String email = null;
         String jwtToken = null;
         // JWT Token is in the form "Bearer token". Remove Bearer word and get
@@ -72,6 +74,7 @@ public class JwtRequestFilter extends OncePerRequestFilter {
                 SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
             }
         }
+        
         chain.doFilter(request, response);
     }
 
